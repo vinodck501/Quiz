@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAT BALL STUMP GAME</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>BAT BALL STUMP GAME</h1>
+  <button class="button" onclick="let randomNumber=Math.random()*3;
+  let computerChoice;
+  if(randomNumber>0 && randomNumber<=1){
+     computerChoice='bat';
+  }else if(randomNumber>1 && randomNumber<=2){
+     computerChoice='ball';
+  }else{
+     computerChoice='stump';
+  };
+   let result;
+  if(computerChoice==='ball'){
+    result='you won the game'
+  }else if(computerChoice==='bat'){
+    result=`it's a tie`
+  }else{
+   result='you lost the game';
+  };
+  alert(result)">bat</button>
+  
+  <button class="button" onclick=" randomNumber=Math.random()*3;
+  if(randomNumber>0 && randomNumber<=1){
+     computerChoice='bat';
+  }else if(randomNumber>1 && randomNumber<=2){
+     computerChoice='ball';
+  }else{
+     computerChoice='stump';
+  };
+  if(computerChoice==='ball'){
+    result=`it's a tie`
+  }else if(computerChoice==='bat'){
+    result=`you lost the game`
+  }else{
+   result='you won the game'
+  };
+  alert(result)">ball</button>
+  
+  <button class="button"onclick="let randomNumber=Math.random()*3;
+ if(randomNumber>0 && randomNumber<=1){
+    computerChoice='bat';
+ }else if(randomNumber>1 && randomNumber<=2){
+    computerChoice='ball';
+ }else{
+    computerChoice='stump';
+ };
+ if(computerChoice==='ball'){
+   result=`you lost the game`;
+ }else if(computerChoice==='bat'){
+   result=`you won`;
+ }else{
+  result='its a tie';
+ };
+ alert(result)">stump</button>
+</body>
+</html>
